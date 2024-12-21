@@ -1,19 +1,17 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 const Layout = () => {
+ 
   return (
     <>
-      <nav className="flex justify-between  items-center bg-green-400 px-10 py-2">
+      <nav className="flex justify-between py-2  items-center bg-green-400 px-10 py-4">
         <div className="text-3xl font-bold">go.EV</div>
-        <div className="flex gap-5 ">
+        <div className="flex gap-5 font-bold">
           <div>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </div>
           <div>
-            <Link to="/blogs">Blogs</Link>
-          </div>
-          <div>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/blogs">Blogs</NavLink>
           </div>
         </div>
       </nav>
